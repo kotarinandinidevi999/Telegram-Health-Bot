@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Fira+Code:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "system-ui", "sans-serif";
+  --font-display: "Space Grotesk", "sans-serif";
+  --font-mono: "Fira Code", "monospace";
+}
+
+/* Telegram Custom Pattern Overlay */
+.telegram-bg {
+  position: relative;
+  background-color: #eef2f5;
+  background-image: radial-gradient(rgba(42, 171, 238, 0.08) 1px, transparent 0),
+                    radial-gradient(rgba(42, 171, 238, 0.08) 1px, transparent 0);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.chat-input-focus:focus-within {
+  border-color: #2aabee;
+  box-shadow: 0 0 0 2px rgba(42, 171, 238, 0.15);
+}

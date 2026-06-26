@@ -1,0 +1,6 @@
+{
+  "name": "MediGuide AI",
+  "description": "Telegram-based medical information assistant providing educational health guidance and emergency warnings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
